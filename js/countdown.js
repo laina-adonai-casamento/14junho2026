@@ -1,22 +1,26 @@
-const weddingDate = new Date("2026-06-12T16:00:00").getTime();
+// Contagem regressiva (somente em dias) - contando o dia de hoje
+// Data do casamento: 12/06/2026
+const targetDate = new Date(2026, 5, 12); // mês é 0-based: 5 = Junho
+const MS_PER_DAY = 1000 * 60 * 60 * 24;
 
 function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = weddingDate - now;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // zera horário para contar por dias
 
-  if (distance < 0) {
-    document.getElementById("countdown").innerHTML = "Hoje é o grande dia! 🎉💍";
+  const diffMs = targetDate.getTime() - today.getTime();
+
+  if (diffMs < 0) {
+    document.getElementById("countdown").textContent = "Hoje é o grande dia! 🎉💍";
     return;
   }
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // +1 para contar o dia de hoje
+  const days = Math.floor(diffMs / MS_PER_DAY) + 1;
 
-  document.getElementById("countdown").innerHTML =
-    `Faltam <strong>${days}</strong> dias, ${hours}h ${minutes}m ${seconds}s para o grande dia 💖`;
+  document.getElementById("countdown").textContent =
+    `Faltam ${days} dias para o grande dia 💖.`;
 }
 
-setInterval(updateCountdown, 1000);
 updateCountdown();
+// Atualiza a cada hora (é suficiente, já que só muda por dia)
+setInterval(updateCountdown, 60 * 60 * 1000);
