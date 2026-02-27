@@ -1,26 +1,47 @@
-// Contagem regressiva (somente em dias) - contando o dia de hoje
-// Data do casamento: 12/06/2026
-const targetDate = new Date(2026, 5, 12); // mês é 0-based: 5 = Junho
-const MS_PER_DAY = 1000 * 60 * 60 * 24;
+// Countdown like the model (days/hours/minutes/seconds)
+const target = new Date("2026-06-12T16:00:00"); // horário do casamento
 
-function updateCountdown() {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0); // zera horário para contar por dias
+const elDays = document.getElementById("cd_days");
+const elHours = document.getElementById("cd_hours");
+const elMinutes = document.getElementById("cd_minutes");
+const elSeconds = document.getElementById("cd_seconds");
 
-  const diffMs = targetDate.getTime() - today.getTime();
+function pad2(n){ return String(n).padStart(2, "0"); }
 
-  if (diffMs < 0) {
-    document.getElementById("countdown").textContent = "Hoje é o grande dia! 🎉💍";
+function update(){
+  const now = new Date();
+  let diff = target.getTime() - now.getTime();
+
+  if (diff <= 0){
+    elDays.textContent = "00";
+    elHours.textContent = "00";
+    elMinutes.textContent = "00";
+    elSeconds.textContent = "00";
     return;
   }
 
-  // +1 para contar o dia de hoje
-  const days = Math.floor(diffMs / MS_PER_DAY) + 1;
+  const totalSeconds = Math.floor(diff / 1000);
+  const days = Math.floor(totalSeconds / (3600 * 24));
+  const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
 
-  document.getElementById("countdown").textContent =
-    `Faltam ${days} dias para o grande dia 💖.`;
+  elDays.textContent = pad2(days);
+  elHours.textContent = pad2(hours);
+  elMinutes.textContent = pad2(minutes);
+  elSeconds.textContent = pad2(seconds);
+
+  // Route button (optional)
+  const origin = document.getElementById("origin");
+  const btn = document.getElementById("btnRoute");
+  if (origin && btn){
+    const q = encodeURIComponent(origin.value.trim() || "");
+    const dest = encodeURIComponent("Local do Casamento");
+    btn.href = q
+      ? `https://www.google.com/maps/dir/?api=1&origin=${q}&destination=${dest}`
+      : `https://www.google.com/maps/search/?api=1&query=${dest}`;
+  }
 }
 
-updateCountdown();
-// Atualiza a cada hora (é suficiente, já que só muda por dia)
-setInterval(updateCountdown, 60 * 60 * 1000);
+update();
+setInterval(update, 1000);
