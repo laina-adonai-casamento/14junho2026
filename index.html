@@ -1,69 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Laina & Adonai | 12 de Junho de 2026</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laina + Adonai</title>
+
+  <!-- Fonts close to the model -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header>
-  <h1>Laina & Adonai</h1>
-  <h2>12 de Junho de 2026</h2>
+  <!-- Top nav -->
+  <header class="top">
+    <div class="top__inner">
+      <div class="brand">
+        <span class="brand__monogram">L + A</span>
+      </div>
+      <nav class="menu">
+        <a href="#inicio">PÁGINAS</a>
+        <a href="#presentes">PRESENTES</a>
+        <a href="#confirmar">CONFIRMAR PRESENÇA</a>
+      </nav>
+    </div>
+  </header>
 
-  <img src="Laina_adonai.jpeg" alt="Foto do casal">
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero__decor hero__decor--left"></div>
+    <div class="hero__decor hero__decor--right"></div>
 
-  <div class="countdown" id="countdown">Carregando...</div>
+    <div class="hero__inner">
+      <div class="hero__frame">
+        <div class="hero__frame-accent"></div>
+        <img class="hero__photo" src="img/casal.jpg" alt="Foto do casal" />
+      </div>
 
-  <div class="links">
-    <a href="#local">📍 Local</a>
-    <a href="#rsvp">💌 Confirmar Presença</a>
-    <a href="#presentes">🎁 Lista de Presentes</a>
-  </div>
-</header>
-<script src="js/countdown.js"></script>
-  <section id="local">
-  <h2>📍 Local da Cerimônia</h2>
-  <p>Em breve divulgaremos o local e o horário.</p>
-</section>
+      <h1 class="names">Laina + Adonai</h1>
 
-<section id="rsvp">
-  <h2>💌 Confirmação de Presença</h2>
-  <p>Confirme sua presença com os noivos pelo WhatsApp.</p>
-</section>
+      <div class="divider divider--thin"></div>
+      <p class="kicker">CONTAGEM REGRESSIVA PARA O GRANDE DIA</p>
 
-<section id="presentes">
-  <h2>🎁 Lista de Presentes</h2>
+      <div class="countdown-grid" aria-live="polite">
+        <div class="countbox">
+          <div class="countnum" id="cd_days">--</div>
+          <div class="countlab">Dias</div>
+        </div>
+        <div class="countbox">
+          <div class="countnum" id="cd_hours">--</div>
+          <div class="countlab">Horas</div>
+        </div>
+        <div class="countbox">
+          <div class="countnum" id="cd_minutes">--</div>
+          <div class="countlab">Minutos</div>
+        </div>
+        <div class="countbox">
+          <div class="countnum" id="cd_seconds">--</div>
+          <div class="countlab">Segundos</div>
+        </div>
+      </div>
 
-  <p>Sua presença é o nosso maior presente. Se desejar nos presentear, deixamos algumas sugestões abaixo:</p>
-  <ul class="gift-list">
-    <li>Jogo de panela (indução)</li>
-    <li>Panela de pressão elétrica</li>
-    <li>Panela de arroz</li>
-    <li>Cafeteira - Preta ou cinza</li>
-    <li>Jogo de suplar 12 peças (verde)</li>
-    <li>Jogo americano 12 peças</li>
-    <li>Jogo de taças 12 peças (verde)</li>
-    <li>Jogo de taças 12 peças (vinho)</li>
-    <li>Jogo de cama queen. branco/cinza</li>
-    <li>Toalha de banho. Branca/cinza</li>
-    <li>Lençol de elástico cama queen: branco, cinza, verde claro</li>
-    <li>Toalha de rosto: branca/cinza/</li>
-    <li>Tapete banheiro: cinza/ Branco</li>
-    <li>Edredon: cama queen</li>
-    <li>Jogo de talheres</li>
-    <li>Jarra de vidro</li>
-    <li>Liquidificador.</li>
-    <li>Jogo de xícara</li>
-    <li>Aparelho de jantar</li>
-    <li>Air Frye - Lorena e Thiago</li>
-  </ul>
-</section>
-  
-<footer>
-  Com amor, Laina & Adonai • 2026 💍
-</footer>
- 
+      <div class="divider"></div>
+
+      <h2 class="welcome">SEJAM BEM-VINDOS AO NOSSO SITE!</h2>
+      <p class="welcome__sub">A MELHOR FORMA DE COMPARTILHAR ESSE MOMENTO COM VOCÊS É VIVENDO JUNTOS ESSE SONHO!</p>
+    </div>
+  </section>
+
+  <!-- Story + Gallery -->
+  <section class="story">
+    <div class="story__inner">
+      <p class="story__text">
+        Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.
+        A contagem regressiva começa e, na hora certa, a emoção do grande dia vai chegar. Obrigado por fazer parte!
+      </p>
+
+      <img class="story__banner" src="img/casal.jpg" alt="Foto do casal" />
+
+      <div class="gallery">
+        <!-- Using same image as placeholder; you can replace later -->
+        <img src="img/casal.jpg" alt="Foto 1" />
+        <img src="img/casal.jpg" alt="Foto 2" />
+        <img src="img/casal.jpg" alt="Foto 3" />
+        <img src="img/casal.jpg" alt="Foto 4" />
+        <img src="img/casal.jpg" alt="Foto 5" />
+        <img src="img/casal.jpg" alt="Foto 6" />
+        <img src="img/casal.jpg" alt="Foto 7" />
+        <img src="img/casal.jpg" alt="Foto 8" />
+      </div>
+
+      <a class="backtop" href="#inicio">VOLTAR AO TOPO</a>
+    </div>
+  </section>
+
+  <!-- Ceremony -->
+  <section id="confirmar" class="ceremony">
+    <div class="ceremony__inner">
+      <h2 class="section-title">CERIMÔNIA RELIGIOSA</h2>
+      <p class="section-subtitle">
+        NÃO PERCAM ESSE MOMENTO LINDO E EMOCIONANTE DAS NOSSAS VIDAS. CONTAMOS COM VOCÊ PARA SER AINDA MAIS ESPECIAL!
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="place-card">
+        <img class="place-card__img" src="img/casal.jpg" alt="Imagem do local (substituir)" />
+        <div class="place-card__body">
+          <h3>PARÓQUIA (COLOQUE O NOME AQUI)</h3>
+          <p class="place-card__meta">12 de Junho de 2026 • 16:00</p>
+          <p class="place-card__text">
+            A sua presença será abençoada para sempre diante dos olhos de Deus. Será para nós uma honra ter pessoas tão queridas
+            vivenciando esse momento ao nosso lado.
+          </p>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <!-- Replace the iframe src with your Google Maps embed -->
+        <iframe
+          title="Mapa"
+          class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Bras%C3%ADlia%20DF&output=embed">
+        </iframe>
+
+        <div class="map-actions">
+          <p class="map-hint">Digite seu endereço para traçar rota (opcional):</p>
+          <div class="map-form">
+            <input id="origin" type="text" placeholder="Ex: Rua X, nº Y, Cidade" />
+            <a id="btnRoute" class="btn-route" href="#" target="_blank" rel="noreferrer">IR AGORA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gifts -->
+  <section id="presentes" class="gifts">
+    <div class="gifts__inner">
+      <h2 class="section-title">LISTA DE CASAMENTO VIRTUAL</h2>
+      <p class="gifts__text">
+        QUERIDOS FAMILIARES E AMIGOS, PARA NÓS, A PRESENÇA DE VOCÊS NESTE DIA TÃO ESPECIAL É O MAIOR PRESENTE QUE PODERÍAMOS
+        RECEBER. MAS, SE VOCÊS TAMBÉM QUISEREM NOS PRESENTEAR, FICAREMOS MUITO AGRADECIDOS.
+      </p>
+
+      <div class="divider"></div>
+
+      <!-- Recuada (accordion) -->
+      <details class="gift-item" open>
+        <summary>Presentes (clique para recolher/abrir)</summary>
+        <ul class="gift-list">
+          <li>Jogo de panela (indução)</li>
+          <li>Panela de pressão elétrica</li>
+          <li>Panela de arroz</li>
+          <li>Cafeteira — preta ou cinza</li>
+          <li>Jogo de suplat 12 peças (verde)</li>
+          <li>Jogo americano 12 peças</li>
+          <li>Jogo de taças 12 peças (verde)</li>
+          <li>Jogo de taças 12 peças (vinho)</li>
+          <li>Jogo de cama queen — branco/cinza</li>
+          <li>Toalha de banho — branca/cinza</li>
+          <li>Lençol de elástico — branco/cinza/verde claro</li>
+          <li>Toalha de rosto — branca/cinza</li>
+          <li>Tapete banheiro — cinza/branco</li>
+          <li>Edredom — cama queen</li>
+          <li>Jogo de talheres</li>
+          <li>Jarra de vidro</li>
+          <li>Liquidificador</li>
+          <li>Jogo de xícara</li>
+          <li>Aparelho de jantar</li>
+          <li>Air Fryer — Lorena e Thiago</li>
+        </ul>
+      </details>
+
+      <p class="signature">Com amor, Laina & Adonai.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 • Laina + Adonai</span>
+    </div>
+  </footer>
+
+  <script src="js/countdown.js"></script>
 </body>
 </html>
