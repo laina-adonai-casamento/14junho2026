@@ -1,4 +1,4 @@
-const target = new Date("2026-06-12T16:00:00");
+const target = new Date("2026-06-14T16:00:00");
 
 const elDays = document.getElementById("cd_days");
 const elHours = document.getElementById("cd_hours");
