@@ -22,7 +22,6 @@ body{
 
 a{ color: inherit; text-decoration:none; }
 
-/* ====== Top bar ====== */
 .top{
   position: sticky;
   top:0;
@@ -55,7 +54,6 @@ a{ color: inherit; text-decoration:none; }
 .menu a{ padding: 6px 0; border-bottom: 1px solid transparent; }
 .menu a:hover{ border-bottom-color: rgba(139,123,103,.45); }
 
-/* ====== Hero ====== */
 .hero{
   position: relative;
   background: var(--paper);
@@ -109,19 +107,19 @@ a{ color: inherit; text-decoration:none; }
 .names{
   font-family: "Great Vibes", cursive;
   font-weight: 400;
-  font-size: 46px;
+  font-size: 52px;
   margin: 10px 0 2px;
   color: #6b6157;
 }
 .kicker{
   margin: 10px 0 14px;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 2px;
   color: #8f816f;
 }
 .data-destaque{
-  margin: 10px 0 8px;
-  font-size: 22px;
+  margin: 12px 0 8px;
+  font-size: 24px;
   letter-spacing: 3px;
   font-weight: 600;
   color: #b88c6a;
@@ -134,20 +132,20 @@ a{ color: inherit; text-decoration:none; }
   margin-bottom: 18px;
 }
 .countbox{
-  width: 86px;
+  width: 92px;
   background: var(--accent);
   color: white;
-  padding: 10px 10px 8px;
+  padding: 12px 10px 10px;
   border-radius: 2px;
 }
 .countnum{
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1;
   font-weight: 600;
   font-family: "Cormorant Garamond", serif;
 }
 .countlab{
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 6px;
   letter-spacing: 1px;
   opacity: .95;
@@ -161,7 +159,7 @@ a{ color: inherit; text-decoration:none; }
 .divider--thin{ width: 240px; margin-top: 14px; }
 .welcome{
   margin: 8px 0 8px;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 2px;
   color: #6f6357;
   font-weight: 400;
@@ -169,12 +167,12 @@ a{ color: inherit; text-decoration:none; }
 .welcome__sub{
   margin: 0 auto;
   max-width: 720px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #7b6f62;
+  line-height: 1.6;
 }
 
-/* ====== Story ====== */
 .story{
   background: var(--paper);
   padding: 58px 0 40px;
@@ -187,10 +185,10 @@ a{ color: inherit; text-decoration:none; }
   text-align:center;
 }
 .story__text{
-  max-width: 820px;
-  margin: 0 auto 26px;
-  font-size: 13px;
-  line-height: 1.6;
+  max-width: 920px;
+  margin: 0 auto 28px;
+  font-size: 22px;
+  line-height: 1.7;
   color: #6f6357;
 }
 .story__banner{
@@ -205,12 +203,11 @@ a{ color: inherit; text-decoration:none; }
 .backtop{
   display:inline-block;
   margin: 22px 0 0;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 2px;
   color: #8f816f;
 }
 
-/* ====== Ceremony ====== */
 .ceremony{
   background: var(--paper);
   padding: 58px 0 44px;
@@ -224,7 +221,7 @@ a{ color: inherit; text-decoration:none; }
 }
 .section-title{
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 2px;
   font-weight: 400;
   color: #6f6357;
@@ -232,9 +229,10 @@ a{ color: inherit; text-decoration:none; }
 .section-subtitle{
   margin: 0 auto;
   max-width: 820px;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #7b6f62;
+  line-height: 1.6;
 }
 .place-card{
   width: min(760px, 94vw);
@@ -254,20 +252,20 @@ a{ color: inherit; text-decoration:none; }
 }
 .place-card__body h3{
   margin: 0 0 6px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
   color: #6f6357;
 }
 .place-card__meta{
   margin: 0 0 8px;
-  font-size: 12px;
+  font-size: 15px;
   color: #8f816f;
 }
 .place-card__text{
   margin:0;
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
   color: #6f6357;
 }
 .map-card{
@@ -283,7 +281,7 @@ a{ color: inherit; text-decoration:none; }
 }
 .map-hint{
   margin: 0 0 10px;
-  font-size: 12px;
+  font-size: 15px;
   color: #7b6f62;
 }
 .map-form{
@@ -298,12 +296,11 @@ a{ color: inherit; text-decoration:none; }
 .btn-route{
   background: var(--accent);
   color: white;
-  padding: 10px 18px;
+  padding: 12px 20px;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
-/* ====== Gifts ====== */
 .gifts{
   background: var(--paper);
   padding: 62px 0 70px;
@@ -317,9 +314,9 @@ a{ color: inherit; text-decoration:none; }
 .gifts__text{
   max-width: 860px;
   margin: 0 auto 8px;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 1px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #6f6357;
   text-transform: uppercase;
 }
@@ -335,7 +332,7 @@ a{ color: inherit; text-decoration:none; }
 .gift-item summary{
   cursor:pointer;
   padding: 14px 16px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   color: #6f6357;
   list-style: none;
@@ -353,17 +350,16 @@ a{ color: inherit; text-decoration:none; }
 }
 .gift-list li{
   margin: 10px 0;
-  font-size: 13px;
+  font-size: 15px;
   color: #5f554b;
 }
 .signature{
   margin-top: 22px;
   font-family: "Great Vibes", cursive;
-  font-size: 28px;
+  font-size: 30px;
   color: #6b6157;
 }
 
-/* ====== Footer ====== */
 .footer{
   background: rgba(0,0,0,.03);
   border-top: 1px solid var(--line);
@@ -373,16 +369,18 @@ a{ color: inherit; text-decoration:none; }
   margin: 0 auto;
   padding: 18px;
   text-align:center;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
   color: #8f816f;
 }
 
-/* ====== Responsive ====== */
 @media (max-width: 820px){
   .place-card{ grid-template-columns: 1fr; }
-  .place-card__img{ height: 160px; }
+  .place-card__img{ height: 180px; }
   .hero__photo{ max-height: 540px; }
   .story__banner{ max-height: 460px; }
-  .data-destaque{ font-size: 18px; }
+  .names{ font-size: 42px; }
+  .data-destaque{ font-size: 20px; }
+  .story__text{ font-size: 18px; }
+  .welcome__sub, .section-subtitle, .gifts__text, .place-card__text, .map-hint { font-size: 15px; }
 }
