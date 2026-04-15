@@ -1,44 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laina + Adonai</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<header class="top">
-  <div class="top__inner">
-    <span class="brand__monogram">L + A</span>
-  </div>
-</header>
+  <header class="top">
+    <div class="top__inner">
+      <div class="brand">
+        <span class="brand__monogram">L + A</span>
+      </div>
+      <nav class="menu">
+        <a href="#inicio">INÍCIO</a>
+        <a href="#local">LOCAL</a>
+        <a href="#presentes">PRESENTES</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero">
-  <img class="hero__photo" src="img/foto-principal.jpg">
-  <h1 class="names">Laina + Adonai</h1>
-  <p class="kicker">14 DE JUNHO DE 2026</p>
+  <section id="inicio" class="hero">
+    <div class="hero__decor hero__decor--left"></div>
+    <div class="hero__decor hero__decor--right"></div>
 
-  <div class="countdown">
-    <span id="cd_days">--</span> dias
-  </div>
-</section>
+    <div class="hero__inner">
+      <div class="hero__frame">
+        <div class="hero__frame-accent"></div>
+        <img class="hero__photo" src="img/foto-principal.jpg" alt="Laina e Adonai" />
+      </div>
 
-<section class="story">
-  <img class="story__banner" src="img/foto-ensaio.jpg">
-</section>
+      <h1 class="names">Laina + Adonai</h1>
 
-<section class="local">
-  <h2>Local do Casamento</h2>
-  <p>Casarão Buriti Alegre by Catarina Veloso Eventos</p>
-  <a href="https://maps.app.goo.gl/n5jqgpmnJMwR3ArS8" target="_blank">Ver localização</a>
-</section>
+      <div class="divider divider--thin"></div>
+      <p class="kicker">12 DE JUNHO DE 2026</p>
+      <p class="kicker">CONTAGEM REGRESSIVA PARA O GRANDE DIA</p>
 
-<script src="js/countdown.js"></script>
+      <div class="countdown-grid" aria-live="polite">
+        <div class="countbox">
+          <div class="countnum" id="cd_days">--</div>
+          <div class="countlab">Dias</div>
+        </div>
+        <div class="countbox">
+          <div class="countnum" id="cd_hours">--</div>
+          <div class="countlab">Horas</div>
+        </div>
+        <div class="countbox">
+          <div class="countnum" id="cd_minutes">--</div>
+          <div class="countlab">Minutos</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 class="welcome">SEJAM BEM-VINDOS AO NOSSO SITE!</h2>
+      <p class="welcome__sub">A MELHOR FORMA DE COMPARTILHAR ESSE MOMENTO COM VOCÊS É VIVENDO JUNTOS ESSE SONHO!</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="story__inner">
+      <p class="story__text">
+        Aqui vamos compartilhar com vocês, queridos amigos e familiares, um pouco da nossa alegria pela chegada do nosso grande dia.
+        Obrigado por fazerem parte da nossa história e por viverem esse sonho conosco.
+      </p>
+
+      <img class="story__banner" src="img/foto-ensaio.jpg" alt="Foto do ensaio do casal" />
+
+      <a class="backtop" href="#inicio">VOLTAR AO TOPO</a>
+    </div>
+  </section>
+
+  <section id="local" class="ceremony">
+    <div class="ceremony__inner">
+      <h2 class="section-title">LOCAL DO CASAMENTO</h2>
+      <p class="section-subtitle">
+        Não percam esse momento tão especial das nossas vidas. Será uma alegria celebrar com vocês.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="place-card">
+        <img class="place-card__img" src="img/foto-ensaio.jpg" alt="Laina e Adonai" />
+        <div class="place-card__body">
+          <h3>CASARÃO BURITI ALEGRE BY CATARINA VELOSO EVENTOS</h3>
+          <p class="place-card__meta">12 de Junho de 2026 • 16:00</p>
+          <p class="place-card__text">
+            Nosso grande dia será celebrado em um lugar muito especial. Ficaremos muito felizes em compartilhar esse momento inesquecível com vocês.
+          </p>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-actions">
+          <p class="map-hint">Clique no botão abaixo para abrir a localização:</p>
+          <div class="map-form map-form--center">
+            <a id="btnRoute" class="btn-route" href="https://maps.app.goo.gl/n5jqgpmnJMwR3ArS8" target="_blank" rel="noreferrer">VER LOCALIZAÇÃO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="presentes" class="gifts">
+    <div class="gifts__inner">
+      <h2 class="section-title">LISTA DE CASAMENTO VIRTUAL</h2>
+      <p class="gifts__text">
+        QUERIDOS FAMILIARES E AMIGOS, PARA NÓS, A PRESENÇA DE VOCÊS NESTE DIA TÃO ESPECIAL É O MAIOR PRESENTE QUE PODERÍAMOS
+        RECEBER. MAS, SE VOCÊS TAMBÉM QUISEREM NOS PRESENTEAR, FICAREMOS MUITO AGRADECIDOS.
+      </p>
+
+      <div class="divider"></div>
+
+      <details class="gift-item" open>
+        <summary>Presentes (clique para recolher/abrir)</summary>
+        <ul class="gift-list">
+          <li>Jogo de panela (indução)</li>
+          <li>Panela de pressão elétrica</li>
+          <li>Panela de arroz</li>
+          <li>Cafeteira — preta ou cinza</li>
+          <li>Jogo de suplat 12 peças (verde)</li>
+          <li>Jogo americano 12 peças</li>
+          <li>Jogo de taças 12 peças (verde)</li>
+          <li>Jogo de taças 12 peças (vinho)</li>
+          <li>Jogo de cama queen — branco/cinza</li>
+          <li>Toalha de banho — branca/cinza</li>
+          <li>Lençol de elástico — branco/cinza/verde claro</li>
+          <li>Toalha de rosto — branca/cinza</li>
+          <li>Tapete banheiro — cinza/branco</li>
+          <li>Edredom — cama queen</li>
+          <li>Jogo de talheres</li>
+          <li>Jarra de vidro</li>
+          <li>Liquidificador</li>
+          <li>Jogo de xícara</li>
+          <li>Aparelho de jantar</li>
+          <li>Air Fryer</li>
+        </ul>
+      </details>
+
+      <p class="signature">Com amor, Laina & Adonai.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>© 2026 • Laina + Adonai</span>
+    </div>
+  </footer>
+
+  <script src="js/countdown.js"></script>
 </body>
 </html>
