@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laina + Adonai</title>
 
-  <!-- Fonts close to the model -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -14,21 +13,19 @@
 </head>
 <body>
 
-  <!-- Top nav -->
   <header class="top">
     <div class="top__inner">
       <div class="brand">
         <span class="brand__monogram">L + A</span>
       </div>
       <nav class="menu">
-        <a href="#inicio">PÁGINAS</a>
+        <a href="#inicio">INÍCIO</a>
+        <a href="#local">LOCAL</a>
         <a href="#presentes">PRESENTES</a>
-        <a href="#confirmar">CONFIRMAR PRESENÇA</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
   <section id="inicio" class="hero">
     <div class="hero__decor hero__decor--left"></div>
     <div class="hero__decor hero__decor--right"></div>
@@ -36,12 +33,13 @@
     <div class="hero__inner">
       <div class="hero__frame">
         <div class="hero__frame-accent"></div>
-        <img class="hero__photo" src="img/casal.jpg" alt="Foto do casal" />
+        <img class="hero__photo" src="img/foto-principal.jpg" alt="Laina e Adonai" />
       </div>
 
       <h1 class="names">Laina + Adonai</h1>
 
       <div class="divider divider--thin"></div>
+      <p class="kicker">12 DE JUNHO DE 2026</p>
       <p class="kicker">CONTAGEM REGRESSIVA PARA O GRANDE DIA</p>
 
       <div class="countdown-grid" aria-live="polite">
@@ -57,10 +55,6 @@
           <div class="countnum" id="cd_minutes">--</div>
           <div class="countlab">Minutos</div>
         </div>
-        <div class="countbox">
-          <div class="countnum" id="cd_seconds">--</div>
-          <div class="countlab">Segundos</div>
-        </div>
       </div>
 
       <div class="divider"></div>
@@ -70,76 +64,50 @@
     </div>
   </section>
 
-  <!-- Story + Gallery -->
   <section class="story">
     <div class="story__inner">
       <p class="story__text">
-        Aqui vamos contar à vocês, queridos amigos e familiares, os momentos mais marcantes da nossa história de amor.
-        A contagem regressiva começa e, na hora certa, a emoção do grande dia vai chegar. Obrigado por fazer parte!
+        Aqui vamos compartilhar com vocês, queridos amigos e familiares, um pouco da nossa alegria pela chegada do nosso grande dia.
+        Obrigado por fazerem parte da nossa história e por viverem esse sonho conosco.
       </p>
 
-      <img class="story__banner" src="img/casal.jpg" alt="Foto do casal" />
-
-      <div class="gallery">
-        <!-- Using same image as placeholder; you can replace later -->
-        <img src="img/casal.jpg" alt="Foto 1" />
-        <img src="img/casal.jpg" alt="Foto 2" />
-        <img src="img/casal.jpg" alt="Foto 3" />
-        <img src="img/casal.jpg" alt="Foto 4" />
-        <img src="img/casal.jpg" alt="Foto 5" />
-        <img src="img/casal.jpg" alt="Foto 6" />
-        <img src="img/casal.jpg" alt="Foto 7" />
-        <img src="img/casal.jpg" alt="Foto 8" />
-      </div>
+      <img class="story__banner" src="img/foto-ensaio.jpg" alt="Foto do ensaio do casal" />
 
       <a class="backtop" href="#inicio">VOLTAR AO TOPO</a>
     </div>
   </section>
 
-  <!-- Ceremony -->
-  <section id="confirmar" class="ceremony">
+  <section id="local" class="ceremony">
     <div class="ceremony__inner">
-      <h2 class="section-title">CERIMÔNIA RELIGIOSA</h2>
+      <h2 class="section-title">LOCAL DO CASAMENTO</h2>
       <p class="section-subtitle">
-        NÃO PERCAM ESSE MOMENTO LINDO E EMOCIONANTE DAS NOSSAS VIDAS. CONTAMOS COM VOCÊ PARA SER AINDA MAIS ESPECIAL!
+        Não percam esse momento tão especial das nossas vidas. Será uma alegria celebrar com vocês.
       </p>
 
       <div class="divider"></div>
 
       <div class="place-card">
-        <img class="place-card__img" src="img/casal.jpg" alt="Imagem do local (substituir)" />
+        <img class="place-card__img" src="img/foto-ensaio.jpg" alt="Laina e Adonai" />
         <div class="place-card__body">
-          <h3>PARÓQUIA (COLOQUE O NOME AQUI)</h3>
+          <h3>CASARÃO BURITI ALEGRE BY CATARINA VELOSO EVENTOS</h3>
           <p class="place-card__meta">12 de Junho de 2026 • 16:00</p>
           <p class="place-card__text">
-            A sua presença será abençoada para sempre diante dos olhos de Deus. Será para nós uma honra ter pessoas tão queridas
-            vivenciando esse momento ao nosso lado.
+            Nosso grande dia será celebrado em um lugar muito especial. Ficaremos muito felizes em compartilhar esse momento inesquecível com vocês.
           </p>
         </div>
       </div>
 
       <div class="map-card">
-        <!-- Replace the iframe src with your Google Maps embed -->
-        <iframe
-          title="Mapa"
-          class="map"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Bras%C3%ADlia%20DF&output=embed">
-        </iframe>
-
         <div class="map-actions">
-          <p class="map-hint">Digite seu endereço para traçar rota (opcional):</p>
-          <div class="map-form">
-            <input id="origin" type="text" placeholder="Ex: Rua X, nº Y, Cidade" />
-            <a id="btnRoute" class="btn-route" href="#" target="_blank" rel="noreferrer">IR AGORA</a>
+          <p class="map-hint">Clique no botão abaixo para abrir a localização:</p>
+          <div class="map-form map-form--center">
+            <a id="btnRoute" class="btn-route" href="https://maps.app.goo.gl/n5jqgpmnJMwR3ArS8" target="_blank" rel="noreferrer">VER LOCALIZAÇÃO</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gifts -->
   <section id="presentes" class="gifts">
     <div class="gifts__inner">
       <h2 class="section-title">LISTA DE CASAMENTO VIRTUAL</h2>
@@ -150,7 +118,6 @@
 
       <div class="divider"></div>
 
-      <!-- Recuada (accordion) -->
       <details class="gift-item" open>
         <summary>Presentes (clique para recolher/abrir)</summary>
         <ul class="gift-list">
@@ -173,7 +140,7 @@
           <li>Liquidificador</li>
           <li>Jogo de xícara</li>
           <li>Aparelho de jantar</li>
-          <li>Air Fryer — Lorena e Thiago</li>
+          <li>Air Fryer</li>
         </ul>
       </details>
 
